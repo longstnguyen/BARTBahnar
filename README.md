@@ -44,7 +44,7 @@ BARTBahnar addresses this gap through two complementary ideas. First, it exploit
 ## What's Inside
 
 - **Translation pipeline** — a five-stage hybrid system that translates Bahnaric sentences to Vietnamese via loanword detection, PMI-based word segmentation, Solr dictionary lookup, BARTBahnar neural translation, and language-model-guided post-processing.
-- **BARTBahnar language model** — an encoder-decoder model derived from BARTPho through three-phase training: Vietnamese pre-training → Bahnaric continual pre-training → bilingual fine-tuning.
+- **BARTBahnar language model** — an encoder-decoder model derived from BARTPho through three-phase training: Vietnamese pre-training $\rightarrow$ Bahnaric continual pre-training $\rightarrow$ bilingual fine-tuning.
 - **Data augmentation toolkit** — seven sentence-level augmentation methods (Combine, Swap, Replace by theme, Replace by synonym, Insert, Delete, Sliding Window) designed to diversify low-resource parallel corpora without disrupting semantic fidelity.
 - **Bilingual dataset** — 53,942 human-annotated Bahnaric-Vietnamese sentence pairs collected through field surveys, supplemented by 270,587 back-translated pairs.
 
@@ -104,7 +104,7 @@ BARTPho is further adapted on monolingual Bahnaric text using a masked language 
 | Data Source | Sentences |
 |---|---|
 | Original Bahnaric side | 53,942 |
-| Back-Translated (Vietnamese Wikipedia → Bahnaric) | 270,587 |
+| Back-Translated (Vietnamese Wikipedia $\rightarrow$ Bahnaric) | 270,587 |
 | **Total** | **324,529** |
 
 **Phase 3 — Bilingual fine-tuning**  
