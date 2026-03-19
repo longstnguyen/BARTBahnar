@@ -219,7 +219,7 @@ data/
 └── raw/
     ├── train.csv                 # Training split — 51,930 Bahnaric-Vietnamese pairs
     ├── test.csv                  # Test split — 2,001 Bahnaric-Vietnamese pairs
-    └── back_translate.csv        # Back-translated pairs — 270,587 rows (UTF-8)
+    └── back_translation.csv      # Back-translated pairs — 270,587 rows
 ```
 
 To use your own data, replace these files or update the paths in `translation/config.py`.
@@ -405,7 +405,7 @@ BARTBahnar/
     └── raw/
         ├── train.csv                 # Training split (51,930 pairs)
         ├── test.csv                  # Test split (2,001 pairs)
-        └── back_translate.csv        # Back-translated pairs (270,587 rows)
+        └── back_translation.csv       # Back-translated pairs (270,587 rows)
 ```
 
 ---
