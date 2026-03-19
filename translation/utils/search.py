@@ -24,7 +24,7 @@ class SolrClient:
         if response.status == 200:
             print("All data on Solr has been deleted.")
         else:
-            print(f"❌ Error deleting data: {response.status}, {response.data.decode('utf-8')}")
+            print(f"Error deleting data: {response.status}, {response.data.decode('utf-8')}")
 
     def upload_documents(self, data):
         """
@@ -34,9 +34,9 @@ class SolrClient:
         response = self.http.request('POST', f'{self.solr_url}/update?commit=true', body=json.dumps(data).encode('utf-8'), headers=headers)
 
         if response.status == 200:
-            print("The data has been successfully uploaded to Solr!")
+            print("Data successfully uploaded to Solr.")
         else:
-            print(f"❌ Error uploading data to Solr: {response.data.decode('utf-8')}")
+            print(f"Error uploading data to Solr: {response.data.decode('utf-8')}")
 
     def search_bahnar_words(self, words):
         """
@@ -105,7 +105,7 @@ class SearchTranslator:
             self.solr_client.upload_documents(documents)
             self.available = True
         except Exception as e:
-            print(f"⚠️  Solr not available ({e.__class__.__name__}): dictionary lookup disabled.")
+            print(f"Solr not available ({e.__class__.__name__}): dictionary lookup disabled.")
 
     def search(self, words):
         """

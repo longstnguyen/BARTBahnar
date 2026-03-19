@@ -27,7 +27,7 @@ def main():
     while True:
         src_sentence = input("\n Enter a sentence to translate: ").strip()
         if src_sentence.lower() == "exit":
-            print("Exiting the program. See you next time!")
+            print("Exiting.")
             break
 
         if not src_sentence:

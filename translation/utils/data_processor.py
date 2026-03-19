@@ -62,14 +62,14 @@ class DataProcessor:
             self.merged_df.to_csv(output_path, index=False)
             # print(f"✅ Clean data saved to {output_path}")
         else:
-            print("⚠️ No data to save!")
+            print("No data to save.")
 
     def extract_sentences(self, column_name="tiếng bana", output_filename="bana_data.txt"):
         """
         Extract sentences from a specific column and save them to a text file.
         """
         if self.merged_df is None or column_name not in self.merged_df.columns:
-            raise ValueError(f"⚠️ Column '{column_name}' does not exist or data has not been loaded!")
+            raise ValueError(f"Column '{column_name}' does not exist or data has not been loaded.")
 
         # Normalize unicode and strip whitespace
         self.merged_df[column_name] = self.merged_df[column_name].str.normalize('NFKC').str.strip()
