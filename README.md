@@ -151,9 +151,9 @@ All models are fine-tuned on the Original dataset (90/10 train/test split, 53,94
 
 | Model | BLEU ↑ | METEOR ↑ |
 |---|---|---|
-| Transformer [[5]](#references) | 0.26 | 0.0431 |
-| PhoBERT-Fused NMT [[3]](#references) | 2.05 | 0.2648 |
-| ViT5 [[4]](#references) | 7.18 | 0.2386 |
+| Transformer [[3]](#references) | 0.26 | 0.0431 |
+| PhoBERT-Fused NMT [[4]](#references) | 2.05 | 0.2648 |
+| ViT5 [[5]](#references) | 7.18 | 0.2386 |
 | BARTPho [[1]](#references) | 5.73 | 0.2076 |
 | **BARTBahnar** | **10.41** | **0.2822** |
 
@@ -410,11 +410,11 @@ BARTBahnar/
 
 [2] H. N. K. Vo, D. D. Le, T. M. D. Phan, T. S. Nguyen, Q. N. Pham, N. O. Tran, Q. D. Nguyen, T. M. H. Vo, and T. Quan. "Revitalizing Bahnaric Language through Neural Machine Translation: Challenges, Strategies, and Promising Outcomes". *AAAI*, 2024.
 
-[3] J. Zhu, Y. Xia, L. Wu, D. He, T. Qin, W. Zhou, H. Li, and T. Liu. "Incorporating BERT into Neural Machine Translation". *ICLR*, 2020.
+[3] A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. N. Gomez, Ł. Kaiser, and I. Polosukhin. "Attention Is All You Need". *NeurIPS*, 2017.
 
-[4] L. Phan, H. Tran, H. Nguyen, and T. H. Trinh. "ViT5: Pretrained Text-to-Text Transformer for Vietnamese Language Generation". *NAACL (Student Research Workshop)*, pp. 136–142, 2022.
+[4] J. Zhu, Y. Xia, L. Wu, D. He, T. Qin, W. Zhou, H. Li, and T. Liu. "Incorporating BERT into Neural Machine Translation". *ICLR*, 2020.
 
-[5] A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. N. Gomez, Ł. Kaiser, and I. Polosukhin. "Attention Is All You Need". *NeurIPS*, vol. 30, 2017.
+[5] L. Phan, H. Tran, H. Nguyen, and T. H. Trinh. "ViT5: Pretrained Text-to-Text Transformer for Vietnamese Language Generation". *NAACL (Student Research Workshop)*, 2022.
 
 [6] Underthesea — Vietnamese NLP toolkit. https://github.com/undertheseanlp/underthesea
 
