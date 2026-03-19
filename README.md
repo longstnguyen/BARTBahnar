@@ -110,7 +110,7 @@ BARTPho is further adapted on monolingual Bahnaric text using a masked language 
 **Phase 3 — Bilingual fine-tuning**  
 The model is fine-tuned as a standard sequence-to-sequence translator: the encoder takes an unmasked Bahnaric sentence and the decoder generates the Vietnamese translation. Fine-tuning uses only the Original subset (53,942 pairs, optionally augmented with our DA methods) to avoid propagating back-translation noise into the supervised signal. Training runs for 15 epochs with AdamW ($\text{lr}=2\text{e-}5$, $\beta_1=0.9$, $\beta_2=0.999$).
 
-> **Checkpoint** — the released `BartBanaFinal` checkpoint corresponds to Phase 3 above: BARTPho after continual pre-training on the monolingual Bahnaric corpus (Phase 2), then supervised fine-tuned on the Original 53,942 parallel pairs (Phase 3). The checkpoint is stored in `translation/checkpoints/BartBanaFinal/` and tracked with Git LFS — it is included in the repository and clones automatically with `git clone`.
+> **Checkpoint** — the released `BartBanaFinal` checkpoint corresponds to Phase 3 above: BARTPho after continual pre-training on the monolingual Bahnaric corpus (Phase 2), then supervised fine-tuned on the Original 53,942 parallel pairs (Phase 3). The checkpoint is stored in `translation/checkpoints/BartBanaFinal/` and is included in the repository.
 
 ---
 
@@ -209,7 +209,7 @@ The following data files (including the BARTBahnar checkpoint) are included in t
 ```
 translation/
 └── checkpoints/
-    └── BartBanaFinal/        # BARTBahnar checkpoint (~1.5 GB, tracked with Git LFS)
+    └── BartBanaFinal/        # BARTBahnar checkpoint (~1.5 GB)
 data/
 ├── dictionary/
 │   └── bavi.csv                  # Bilingual dictionary — columns: Bahnaric, Vietnamese
@@ -384,7 +384,7 @@ BARTBahnar/
 │   ├── translation_pipeline.py       # Translator class orchestrating all five stages
 │   ├── config.py                     # Paths to dictionary, corpus, word list, and checkpoint
 │   ├── checkpoints/
-│   │   └── BartBanaFinal/            # BARTBahnar checkpoint (~1.5 GB, tracked with Git LFS)
+│   │   └── BartBanaFinal/            # BARTBahnar checkpoint (~1.5 GB)
 │   └── utils/
 │       ├── vietnamese_text_analyzer.py   # Loanword detection and NER (VietnameseTextAnalyzer)
 │       ├── word_segmentation.py          # PMI-based phrase extraction and segmentation
@@ -405,7 +405,7 @@ BARTBahnar/
     └── raw/
         ├── train.csv                 # Training split (51,930 pairs)
         ├── test.csv                  # Test split (2,001 pairs)
-        └── back_translation.csv       # Back-translated pairs (270,587 rows)
+        └── back_translation.csv      # Back-translated pairs (270,587 rows)
 ```
 
 ---
