@@ -52,8 +52,7 @@ BARTBahnar addresses this gap through two complementary ideas. First, it exploit
 
 ## Translation Pipeline
 
-![Translation Pipeline](translation/pipeline.png)  
-[View full PDF](translation/pipeline.pdf)
+[**View Translation Pipeline Diagram (PDF)**](translation/pipeline.pdf)
 
 The pipeline transforms a raw Bahnaric sentence into Vietnamese through five sequential stages.
 
